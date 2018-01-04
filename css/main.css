@@ -1,0 +1,209 @@
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: 'Gotham-Book',sans-serif;
+    background-color: #fff;
+    overflow-y: scroll;
+}
+
+@font-face {
+    font-family: 'Gotham-Book';
+    src: URL('../res/Gotham-Rounded-Book.ttf') format('ttf');
+}
+@font-face {
+    font-family: 'Gotham-Light';
+    src: URL('../res/Gotham-Rounded-Light.ttf') format('ttf');
+}
+@font-face {
+    font-family: 'Gotham-Med';
+    src: URL('../res/Gotham-Rounded-Medium.ttf') format('ttf');
+}
+
+.search-flex{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.result{
+    height: 100vh;
+    padding: 4vh 5vw;
+    display: none;
+}
+
+.search-block{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+}
+
+.search-block > img{
+    position: absolute;
+    left: -7vw;
+    top: 5vh;
+    z-index: -10;
+}
+
+.result-list{
+    height: inherit;
+    display: flex;
+    flex-direction: column; 
+}
+
+.result-list-item{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height: 200px;
+    width: 70vw;
+    min-width: 500px;
+}
+.button-search {
+    display: inline-block;
+    -webkit-box-sizing: content-box;
+    -moz-box-sizing: content-box;
+    box-sizing: content-box;
+    cursor: pointer;
+    padding: 20px 50px;
+    border: none;
+    -webkit-border-radius: 7px;
+    border-radius: 7px;
+    font: normal 19px/normal "Trebuchet MS", Helvetica, sans-serif;
+    color: rgba(255,255,255,0.9);
+    -o-text-overflow: clip;
+    text-overflow: clip;
+    background: #14937a;
+    -webkit-box-shadow: 1px 3px 0 0 rgba(17,81,68,1) ;
+    box-shadow: 1px 3px 0 0 rgba(17,81,68,1) ;
+    text-shadow: -1px -1px 0 rgba(15,73,168,0.66);
+  }
+
+  .add-margin{
+    margin-top:3vh;
+  }
+
+  .text-header{
+      padding: 5px 10px;
+      background-color: #fff;
+  }
+
+  .overlay {
+    display: none;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    background-color: rgba(0, 0, 0, 0.8);
+    align-items: center;
+    justify-content: center;
+}
+
+.overlay-content {
+    padding: 25px 25px;
+    width: 50vw;
+    min-width: 500px;
+    min-height: 400px;
+    height: 50vh;
+    background-color: white;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.grid-container {
+    display: grid;
+    grid-gap: 10px;
+    padding: 10px;
+    color: #6b6a6a;
+    font-size: 1.1em;
+  }
+  .grid-item {
+    text-align: left;
+    padding: 20px;
+    
+  }
+  .grid-title {
+    grid-column: 1 / span 5;
+    grid-row: 1;
+    font-size: 1.6em;
+  }
+
+  .grid-title img{
+    float: right;
+    margin-right: -25px;
+    margin-top: -25px;
+    cursor: pointer;
+  }
+  .grid-row-1 {
+    grid-column: 2 / span 4;
+    grid-row: 2;
+  }
+  .grid-row-2 {
+    grid-column: 2 / span 4;
+    grid-row: 3;
+  }
+
+  .grid-row-3 {
+    grid-column: 2 / span 4;
+    grid-row: 4;
+  }
+
+  .input-style {
+    display: inline-block;
+    -webkit-box-sizing: content-box;
+    -moz-box-sizing: content-box;
+    box-sizing: content-box;
+    padding: 12px 20px;
+    border: 1px solid #b7b7b7;
+    -webkit-border-radius: 1px;
+    border-radius: 1px;
+    font: normal 16px/normal "Trebuchet MS", Helvetica, sans-serif;
+    color: #6b6a6a;
+    background: rgba(244,244,244,1);
+    -webkit-box-shadow: 2px 2px 0 0 rgb(104, 104, 104) ;
+    box-shadow: 2px 2px 0 0 rgb(190, 189, 189) ;
+    width:  fit-content;
+    width:  -webkit-fill-available;
+  }
+
+  form{
+      display: inherit;
+  }
+  
+  .result-info{
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      margin: 40px 25px;
+      padding: 40px 0px;
+      height: inherit;
+      border-bottom-style: solid;
+      border-bottom-color: #757575;
+      border-bottom-width: 1px;
+      width: inherit;
+  }
+  .result-info span:nth-child(1),span:nth-child(2) {
+      font-weight: 900;
+  }
+
+  .display-image{
+      padding: 10px;
+      height: 180px;
+      width: 180px;
+      border-radius: 50%;
+  }
+h1 a{
+    text-decoration: none;
+    font-size: 0.65em;
+    color: green;
+}

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<title>UI Demo</title>
+	<script src="./js/jquery-3.2.1.min.js"></script>
+	<script src="./js/main.js"></script>
+	<link rel="stylesheet" href="./css/main.css"></link>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<body>
+
+<div class='search-flex'>
+	<div class="search-block">
+		<h1 class="text-header">Find your artist below</h1>
+		<img src="./res/arrow.png" />
+		<input type="button" class="button-search add-margin" value="Search Artist" id="openPopup"/>
+	</div>
+</div>
+
+<div class='result'>
+	<div class="result-header">
+		<h1>Search results for "Jack".&nbsp;&nbsp;&nbsp;&nbsp; <a id="clear-result" href="#">( clear )</a></h2>	
+	</div>
+	<div class="result-list">
+		
+	</div>
+</div>
+
+<div class="overlay">
+	<div class="overlay-content">
+		<div class="grid-container">
+			<form action="">
+			<div class="grid-item grid-title">Enter Search Criteria <img src="./res/cross.svg" id=closePopup width=18px></div>
+			<div class="grid-item grid-row-1"><input type="text" name="artist" class="input-style" placeholder="Enter artist name" /></div>  
+			<div class="grid-item"><span>Artist name</span></div>
+			<div class="grid-item grid-row-2"><input type="number" name="tracks" class="input-style" placeholder="0" /></div>
+			<div class="grid-item"><span>No. of tracks</span></div>
+			<div class="grid-item grid-row-3"><input type="submit" value="Search" class="button-search" /></div>
+			<div class="grid-item"></div>
+			</form>
+		</div>
+	</div>
+</div>
+</body>
+
+</html>
+
+
