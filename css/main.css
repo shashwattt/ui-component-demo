@@ -13,15 +13,15 @@ body {
 
 @font-face {
     font-family: 'Gotham-Book';
-    src: URL('../res/Gotham-Rounded-Book.ttf') format('ttf');
+    src: URL('../res/Gotham-Rounded-Book.ttf') format('truetype');
 }
 @font-face {
     font-family: 'Gotham-Light';
-    src: URL('../res/Gotham-Rounded-Light.ttf') format('ttf');
+    src: URL('../res/Gotham-Rounded-Light.ttf') format('truetype');
 }
 @font-face {
     font-family: 'Gotham-Med';
-    src: URL('../res/Gotham-Rounded-Medium.ttf') format('ttf');
+    src: URL('../res/Gotham-Rounded-Medium.ttf') format('truetype');
 }
 
 .search-flex{
